@@ -668,6 +668,25 @@ section.active {
     transition: .2s;
 
 }
+.button{
+ display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 10rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    font-weight: 500;
+    transition: .2s;
+    margin-left: 18rem;
+}
+.button:hover{
+    background: transparent;
+    color: var(--main-color);
+    box-shadow: none;
+    cursor: pointer;
+}
 
 .portfolio-box .live-github a:hover span {
     top: -70%;
