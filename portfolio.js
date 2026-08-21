@@ -16,7 +16,7 @@ const activePage = () => {
     header.classList.remove('active');
     setTimeout(() => {
         header.classList.add('active');
-    }, 1100);
+    }, 0);
 
     navLinks.forEach(link => {
         link.classList.remove('active');
@@ -25,7 +25,7 @@ const activePage = () => {
     barsBox.classList.remove('active');
     setTimeout(() => {
         barsBox.classList.add('active');
-    }, 1100);
+    }, 0);
 
     section.forEach(section => {
         section.classList.remove('active');
@@ -44,7 +44,7 @@ navLinks.forEach((link, idx) => {
 
             setTimeout(() => {
                 section[idx].classList.add('active');
-            }, 1100);
+            }, 0);
         }
     });
 });
@@ -56,7 +56,7 @@ logoLinks.addEventListener('click', () => {
         navLinks[0].classList.add('active')
         setTimeout(() => {
             section[0].classList.add('active');
-        }, 1100);
+        }, 0);
     }
 
 });

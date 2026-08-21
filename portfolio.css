@@ -45,7 +45,7 @@ header {
 
 header.active {
     animation: show-header 1.5s linear forwards;
-    animation-delay: 1.2s;
+    animation-delay: 0;
 
 }
 
@@ -134,7 +134,7 @@ section {
 
 section.active {
     animation: show-content 1.5s linear forwards;
-    animation-delay: 1.6s;
+    animation-delay: 0s;
 }
 
 @keyframes show-content {
@@ -249,7 +249,8 @@ section.active {
     margin: 0 .8rem;
     transition: .2s;
 }
- .home-detail .btn-sci .sci a:hover{
+
+.home-detail .btn-sci .sci a:hover {
     transform: translateY(-15px) scale(1);
 }
 
@@ -668,8 +669,9 @@ section.active {
     transition: .2s;
 
 }
-.button{
- display: inline-block;
+
+.button {
+    display: inline-block;
     padding: 1rem 3rem;
     background-color: var(--main-color);
     border: .2rem solid var(--main-color);
@@ -681,7 +683,8 @@ section.active {
     transition: .2s;
     margin-left: 18rem;
 }
-.button:hover{
+
+.button:hover {
     background: transparent;
     color: var(--main-color);
     box-shadow: none;
@@ -816,14 +819,10 @@ section.active {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 2.8rem;
-
     background: var(--second-bg-color);
     color: var(--main-color);
-
     border-radius: .8rem;
-
     flex-shrink: 0;
 }
 
@@ -936,12 +935,14 @@ section.active {
         display: block;
         margin: 4rem 0;
     }
-    .home{
+
+    .home {
         flex-direction: column-reverse;
         justify-content: center;
         gap: 2rem;
     }
-    .home-img .img-box{
+
+    .home-img .img-box {
         width: 35rem;
         height: 35rem;
 
@@ -949,23 +950,26 @@ section.active {
 
     .resume-container,
     .portfolio-container,
-    .contact-container{
+    .contact-container {
         grid-template-columns: 1fr;
     }
-    .resume-container{
+
+    .resume-container {
         gap: 3rem;
     }
 
-    .portfolio-container .portfolio-box:first-child{
+    .portfolio-container .portfolio-box:first-child {
         order: 1;
     }
-    .contact-box .field-box{
+
+    .contact-box .field-box {
         grid-template-columns: repeat(2, 1fr);
 
     }
 }
-@media screen and (max-width: 600px){
-    .home-img .img-box{
+
+@media screen and (max-width: 600px) {
+    .home-img .img-box {
         width: 30rem;
         height: 30rem;
     }
@@ -975,33 +979,38 @@ section.active {
     }
 
 }
+
 @media screen and (max-width: 450px) {
-    html{
+    html {
         font-size: 50%;
     }
 }
-@media screen and (max-width: 400px){
+
+@media screen and (max-width: 400px) {
+
     .home-detail,
     .resume-box h2,
     .resume-box .heading,
     .resume-box .desc,
-    .resume-detail.about .resume-item{
+    .resume-detail.about .resume-item {
         text-align: center;
     }
-    .home-detail .btn-sci{
+
+    .home-detail .btn-sci {
         flex-direction: column-reverse;
     }
-    .home-detail .btn-sci .sci{
+
+    .home-detail .btn-sci .sci {
         margin-left: 0;
         margin-bottom: 2rem;
     }
-     
-    .contact-box form{
+
+    .contact-box form {
         padding: 2.5rem 3rem 3.5rem;
     }
-    .contact-box h2{
+
+    .contact-box h2 {
         font-size: 3.5rem;
     }
-    
-}
 
+}
